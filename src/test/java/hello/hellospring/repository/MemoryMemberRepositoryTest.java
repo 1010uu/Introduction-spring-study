@@ -13,6 +13,7 @@ class MemoryMemberRepositoryTest {
 
         repository.save(member);
 
-        repository.findById(member.getId());
+        /* optional에서 값을 바로 꺼낼 때 get() 사용 할 수 있음 */
+        repository.findById(member.getId()).get();
     }
 }
