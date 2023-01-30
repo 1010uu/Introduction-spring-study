@@ -7,7 +7,8 @@ import org.springframework.stereotype.Controller;
 @Controller //springContainer에 컨트롤러를 생성해 넣어두고 관리한다. //spring bean이 관리한다.
 public class MemberController {
 
-    private final MemberService memberService; //springContainer에 등록
+    private final MemberService memberService; //spring bean에 올라옴
+
     @Autowired //srpingContainer에 멤버 서비스랑 연결 //의존관계를 주입
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
