@@ -25,5 +25,9 @@ public class MemberController {
      * 같은 스프링 빈 = 같은 인스턴스
      * */
 
+    /**
+     *
+     */
+
 
 }
