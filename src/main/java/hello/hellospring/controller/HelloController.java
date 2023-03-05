@@ -21,6 +21,7 @@ public class HelloController {
 
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam(value = "name", required = true) String name, Model model){
+        //Ctrl + P 파라미터 정보 단축키
         //required = true 기본으로 값을 넘겨야함.
         model.addAttribute("name", name);
         return "hello-template";
